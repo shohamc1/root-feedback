@@ -13,6 +13,7 @@ def addfb (request):
     newitem = fbcontent(stdname=request.POST.get('stdname'), feedback=request.POST.get('message'))
     newitem.save()
 
-    cloud.main()
+    #cloud.main()
+    feedbackpage.cloud.main()
 
     return HttpResponseRedirect ('/main/')

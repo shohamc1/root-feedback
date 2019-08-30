@@ -41,4 +41,4 @@ def main():
 
     plt.imshow(wordcloud)
     plt.axis('off')
-    plt.savefig (os.getcwd() + '/static/images/cloud.png')
+    plt.savefig (os.path.join(os.getcwd(), 'feedbackpage/static/images/cloud.png'))
