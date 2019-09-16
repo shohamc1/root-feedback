@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from feedbackpage.views import mainPage, addfb
+from submissions.views import page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('main/', mainPage),
     path('submit/', addfb),
+    path('submissions/', page),
 ]
