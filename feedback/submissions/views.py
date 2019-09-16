@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from feedbackpage.models import fbcontent
 
 # Create your views here.
 
 def page(request):
-    return HttpResponse (content='Working!')
+    allitems = fbcontent.objects.all()
+    return render (request, 'submissions.html', {'allitems': allitems})

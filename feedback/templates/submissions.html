@@ -1,0 +1,12 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/submissions/style.css' %}"
+</head>
+<body>
+    <h1>HERES THE SUBMISSIONS</h1>
+    <ul>
+        {% for sub in allitems %}
+            <li>{{ sub.feedback }}</li>
+        {% endfor %}
+    </ul>
+</body>
