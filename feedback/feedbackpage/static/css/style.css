@@ -1,0 +1,28 @@
+html{
+  background-image: url(https://www.todayonline.com/sites/default/files/styles/new_app_article_detail/public/photos/43_images/ezxsutd02231_read-only.jpg?itok=qynXHPZj);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+body {
+  font-family: Georgia, serif;
+  font-size: 17px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;}
+
+div {
+  margin: auto;
+  width: 80%;
+  border: 3px solid red;
+  padding: 50px;
+  background-color: rgba(8, 1, 1, 0.65);
+  text-align: center;
+  text-color: white;
+}

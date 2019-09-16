@@ -1,13 +1,15 @@
 {% load static %}
-
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
 <body>
+<div>
     <img src="{% static 'images/cloud.png' %}">
     <h1>ROOT Feedback Form</h1>
-    <div>
     <form action='/submit/' method="POST"> {% csrf_token %}
         Name: <input type="text" name="stdname" /><br><br>
         Feedback: <textarea name="message" /></textarea><br>
         <input type="submit" value="Submit">
     </form>
-    </div>
+</div>
 </body>
