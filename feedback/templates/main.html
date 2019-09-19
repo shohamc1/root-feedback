@@ -5,7 +5,8 @@
 <body>
 <div>
     <img src="{% static 'images/cloud.png' %}">
-    <h1>ROOT Feedback Form</h1>
+    <h1>Dialogue with Senior Management Feedback Form</h1>
+    <p> Your feedback will be collated by Student Relations Sub-Committee and will be brought up to Senior Management during DSM2019. </p>
     <form action='/submit/' method="POST"> {% csrf_token %}
         Name: <input type="text" name="stdname" /><br><br>
         Feedback: <textarea name="message" /></textarea><br>
