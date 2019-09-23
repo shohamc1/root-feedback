@@ -1,27 +1,53 @@
 {% load static %}
 <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/feedbackpage/style.css' %}">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div>
     <!-- <img src="{% static 'images/cloud.png' %}"> -->
-    <h1>Dialogue with Senior Management 2019<br>Feedback Form</h1><hr>
-    <p> Your feedback will be collated by Student Relations Sub-Committee and will be brought up to Senior Management during DSM2019.<br></p><hr><br>
-    <form action='/submit/' method="POST"> {% csrf_token %}
-        Name: <br><input type="text" name="stdname" /><br>
-        Student ID: <br><input type="number" name="stdid" required/><br>
-        Email: <br><input type="text" name="stmail" /><br>
-        Pillar: <br><input type="text" name="pillar" /><br>
-        Category: <br><select name="category">
-            <option value="academics">Academics</option>
-            <option value="facilities">Campus Facilities</option>
-            <option value="canteen/food">Canteen and Food Options</option>
-            <option value="communications">Feedback and Communications Matters</option>
-            <option value="5throw">5th Row related matters</option>
-            <option value="others">Others</option>
-          </select><br>
-        Feedback: <br><input class="feedback" type="text" name="message" required/></textarea><br><br><br>
-        <input class="submit" type="submit" value="Submit">
-    </form>
-</div>
+    <div class="jumbotron">
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-sm-12 sticky-top" #leftcolumn>
+            <h1>Dialogue with <br>Senior Management 2019<br>Feedback Form</h1><hr>
+            <p> Your feedback is greatly appreciated and will be collated by ROOT Student Relations for DSM 2019.<br></p>
+        </div>
+        <div class="col-md-6 col-sm-12" #rightcolumn>
+            <form action='/submit/' method="POST"> {% csrf_token %}
+            <div class="row">    
+            <div class="col">Name: <br>
+            <input type="text" name="stdname" /><br></div>
+            <div class="col">Student ID: <br>
+            <input type="number" name="stdid" required/><br></div>
+            </div>
+            Email: <br><input type="text" name="stmail" /><br>
+            <div class="row">
+            <div class="col">Pillar: <br>
+            <input type="text" name="pillar" /><br></div>
+            <div class="col">Category: <br>
+                <select name="category">
+                <option value="academics">Academics</option>
+                <option value="facilities">Campus Facilities</option>
+                <option value="canteen/food">Canteen and Food Options</option>
+                <option value="communications">Feedback and Communications Matters</option>
+                <option value="5throw">5th Row related matters</option>
+                <option value="others">Others</option>
+                </select>
+                <br>
+                </div>
+            </div>
+            Feedback: <br><textarea name="message" required/></textarea><br>
+            <center><input class="submit" type="submit" value="Submit"></center>
+            </form>
+        </div>
+    </div>
+    </div><br>
+    </div>
 </body>
