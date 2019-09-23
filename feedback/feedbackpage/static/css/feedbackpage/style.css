@@ -1,12 +1,19 @@
 html{
-  background-image: url(https://www.todayonline.com/sites/default/files/styles/new_app_article_detail/public/photos/43_images/ezxsutd02231_read-only.jpg?itok=qynXHPZj);
+/*  background-color: red; */
+/*  background-image: url(https://www.todayonline.com/sites/default/files/styles/new_app_article_detail/public/photos/43_images/ezxsutd02231_read-only.jpg?itok=qynXHPZj); */
+/*  background: url(https://image.freepik.com/free-vector/seamless-minimalist-background-texture_23-2147486301.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: repeat-y;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 body {
-  font-family: Georgia, serif;
+  font-family: Calibri;
   font-size: 17px;
   letter-spacing: 2px;
   word-spacing: 2px;
@@ -15,14 +22,125 @@ body {
   text-decoration: none;
   font-style: normal;
   font-variant: normal;
-  text-transform: none;}
+  text-transform: none;
+}
 
-div {
+.back { 
   margin: auto;
-  width: 80%;
-  border: 3px solid red;
+  width: 90%;
   padding: 50px;
-  background-color: rgba(8, 1, 1, 0.65);
-  text-align: center;
+  background-color: rgba(1, 1, 1, 0.80);
+  border: 5px ridge white;
+  text-align: left;
   text-color: white;
+}
+
+hr {
+  color: white;
+  border-color: white;
+}
+
+.jumbotron{
+  background-image: url(https://image.freepik.com/free-vector/seamless-minimalist-background-texture_23-2147486301.jpg);
+  background-size: cover;
+  background-repeat: repeat-y;
+  min-height: 100%;
+  margin-bottom: 0%;
+ }
+
+.container-fluid {
+  margin: auto;
+  width:90%;
+  padding: 20px;
+  background-color: rgba(1, 1, 1, 0.80);
+  border: 5px ridge black;
+  text-align: left;
+  text-color: white;
+}
+
+.row {
+  width:90%;
+  background-color: rgba(0,0,0,0)
+}
+
+.col-md-6 {
+  background-color: rgba(0,0,0,0)
+}
+
+.col-sm-12 {
+  background-color: rgba(0,0,0,0)
+}
+
+h1 {
+  /*text-align: center;*/
+}
+
+input {
+  color:white;
+  height: 30px;
+  width:90%;
+  margin: 2%;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid gray;
+  background-color: rgba(0,0,0,0)
+}
+
+.halfcolumn {
+  float:left;
+  width: 40%;
+  height: 70%;
+  display: block;
+}
+
+select {
+  background-color: rgba(0,0,0,0);
+  height: 30px;
+  width:80%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  margin-left: 2%;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid gray;
+  color: white;
+}
+
+.submit {
+  background-color:rgba(0,0,0,0);
+  color: white;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  text-align: center;
+}
+
+textarea {
+  background-color:rgba(0,0,0,0);
+  color: white;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid gray;
+  margin: 1%;
+  min-height: 300px; 
+  width:100%;
+}
+
+.feedback {
+  width:80%;
+  min-height: 50%;
+  margin: 2%;
+}
+
+option {
+  background-color: grey;
+}
+
+#leftcolumn {
+  position:sticky;
+  top:0;
 }
