@@ -6,7 +6,9 @@
     <h1>HERES THE SUBMISSIONS</h1>
     <ul>
         {% for sub in allitems %}
+            {% if sub.name == "ABC" %}
             <li>{{ sub.feedback }}</li>
+            {% endif %}
         {% endfor %}
     </ul>
 </body>

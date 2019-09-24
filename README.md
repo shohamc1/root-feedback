@@ -6,3 +6,5 @@
 4. `cd feedback/`
 5. Open the virtual environment using `pipenv shell`
 6. Run the thing by `python manage.py runserver`
+
+Note: Wordcloud functionality has been removed, maybe can add it later for the main feedback page
