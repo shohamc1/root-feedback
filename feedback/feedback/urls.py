@@ -18,6 +18,7 @@ from django.urls import path
 from feedbackpage.views import mainPage, addfb
 from submissions.views import page, categoryfn
 from overview.views import overview
+from gencsv.views import createcsv
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +26,6 @@ urlpatterns = [
     path('submit/', addfb),
     path('submissions/', page),
     path('overview/', overview),
-    path('submitssions/', categoryfn)
+    path('submitssions/', categoryfn),
+    path('gencsv/', createcsv),
 ]
