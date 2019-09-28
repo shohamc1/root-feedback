@@ -1,28 +1,144 @@
 html{
-  background-image: url(https://www.todayonline.com/sites/default/files/styles/new_app_article_detail/public/photos/43_images/ezxsutd02231_read-only.jpg?itok=qynXHPZj);
+    background-color: #FFFFFF;
+/*  background-color: red; */
+/*  background-image: url(https://www.todayonline.com/sites/default/files/styles/new_app_article_detail/public/photos/43_images/ezxsutd02231_read-only.jpg?itok=qynXHPZj); */
+/*  background: url(https://image.freepik.com/free-vector/seamless-minimalist-background-texture_23-2147486301.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: repeat-y;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 body {
-  font-family: Georgia, serif;
-  font-size: 17px;
+  font-family: Open Sans;
+  font-size: 16px;
   letter-spacing: 2px;
   word-spacing: 2px;
-  color: white;
+  color:black;
   font-weight: normal;
   text-decoration: none;
   font-style: normal;
   font-variant: normal;
-  text-transform: none;}
+  text-transform: none;
+}
 
-div {
+.back { 
   margin: auto;
-  width: 80%;
-  border: 3px solid red;
+  width: 90%;
   padding: 50px;
-  background-color: rgba(8, 1, 1, 0.65);
+  background-color: rgba(0, 0, 0, 0);
+  border: 5px ridge white;
+  text-align: left;
+}
+
+.jumbotron{
+  /*background-image: url(https://image.freepik.com/free-vector/seamless-minimalist-background-texture_23-2147486301.jpg);
+  background-size: cover;
+  background-repeat: repeat-y;*/
+  background-color:#FFFFFF;
+  min-height: 100%;
+  margin-bottom: 0%;
+  margin-top:0;
+  padding-top:2%;
+ }
+
+.container-fluid {
+  margin: 0;
+  width:100%;
+  padding: 20px;
+  background-color: rgba(1, 1, 1, 0);
+  text-align: left;
+}
+
+.row {
+  width:90%;
+  background-color: rgba(0,0,0,0)
+}
+
+.col-md-6 {
+  background-color: rgba(0,0,0,0)
+}
+
+.col-sm-12 {
+  background-color: rgba(0,0,0,0)
+}
+
+h1 {
+  /*text-align: center;*/
+  font-size: 60px;
+  font-weight: bold;
+}
+
+input {
+  color:black;
+  height: 30px;
+  width:90%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: rgba(0,0,0,0)
+}
+
+select {
+  background-color: rgba(0,0,0,0);
+  height: 30px;
+  width:130%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  margin-left: 2%;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  color: black;
+}
+
+.submit {
+  background-color:rgba(0,0,0,0);
+  color: black;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
   text-align: center;
-  text-color: white;
+}
+
+textarea {
+  background-color:rgba(0,0,0,0);
+  color: black;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin: 1%;
+  margin-top: 3%;
+  min-height: 300px; 
+  width:100%;
+}
+
+.feedback {
+  width:80%;
+  min-height: 50%;
+  margin: 2%;
+}
+
+/*option {
+  background-color: grey;
+}*/
+
+#leftcolumn {
+  position:sticky;
+  top:0;
+}
+
+.halfcolumn {
+  padding-left: 2%;
+  padding-right: 2%;
 }

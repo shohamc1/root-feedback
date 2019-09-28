@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'feedbackpage',
     'submissions',
+    'overview',
+    'gencsv',
 ]
 
 MIDDLEWARE = [

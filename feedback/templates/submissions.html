@@ -3,10 +3,25 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/submissions/style.css' %}"
 </head>
 <body>
+    <form action='/submitssions/' method="POST"> {% csrf_token %}
+        <select name="cat">
+        <option value="academics">Academics</option>
+        <option value="facilities">Campus Facilities</option>
+        <option value="canteen/food">Canteen and Food Options</option>
+        <option value="communications">Feedback and Communications Matters</option>
+        <option value="5throw">5th Row related matters</option>
+        <option value="others">Others</option>
+        <option value="ABC">All</option>
+        </select>
+        <br>
+        <input type="submit">Click Me!</button> 
+    </form>
     <h1>HERES THE SUBMISSIONS</h1>
     <ul>
         {% for sub in allitems %}
+            {% if sub.category == category or category == "ABC" %}
             <li>{{ sub.feedback }}</li>
+            {% endif %}
         {% endfor %}
     </ul>
 </body>
