@@ -1,4 +1,5 @@
 html{
+    background-color: #FFFFFF;
 /*  background-color: red; */
 /*  background-image: url(https://www.todayonline.com/sites/default/files/styles/new_app_article_detail/public/photos/43_images/ezxsutd02231_read-only.jpg?itok=qynXHPZj); */
 /*  background: url(https://image.freepik.com/free-vector/seamless-minimalist-background-texture_23-2147486301.jpg) no-repeat center center;
@@ -13,11 +14,11 @@ html{
 }
 
 body {
-  font-family: Calibri;
-  font-size: 17px;
+  font-family: Open Sans;
+  font-size: 16px;
   letter-spacing: 2px;
   word-spacing: 2px;
-  color: white;
+  color:black;
   font-weight: normal;
   text-decoration: none;
   font-style: normal;
@@ -29,33 +30,28 @@ body {
   margin: auto;
   width: 90%;
   padding: 50px;
-  background-color: rgba(1, 1, 1, 0.80);
+  background-color: rgba(0, 0, 0, 0);
   border: 5px ridge white;
   text-align: left;
-  text-color: white;
-}
-
-hr {
-  color: white;
-  border-color: white;
 }
 
 .jumbotron{
-  background-image: url(https://image.freepik.com/free-vector/seamless-minimalist-background-texture_23-2147486301.jpg);
+  /*background-image: url(https://image.freepik.com/free-vector/seamless-minimalist-background-texture_23-2147486301.jpg);
   background-size: cover;
-  background-repeat: repeat-y;
+  background-repeat: repeat-y;*/
+  background-color:#FFFFFF;
   min-height: 100%;
   margin-bottom: 0%;
+  margin-top:0;
+  padding-top:2%;
  }
 
 .container-fluid {
-  margin: auto;
-  width:90%;
+  margin: 0;
+  width:100%;
   padding: 20px;
-  background-color: rgba(1, 1, 1, 0.80);
-  border: 5px ridge black;
+  background-color: rgba(1, 1, 1, 0);
   text-align: left;
-  text-color: white;
 }
 
 .row {
@@ -73,44 +69,40 @@ hr {
 
 h1 {
   /*text-align: center;*/
+  font-size: 60px;
+  font-weight: bold;
 }
 
 input {
-  color:white;
+  color:black;
   height: 30px;
   width:90%;
-  margin: 2%;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
   border-bottom: 1px solid gray;
   background-color: rgba(0,0,0,0)
-}
-
-.halfcolumn {
-  float:left;
-  width: 40%;
-  height: 70%;
-  display: block;
 }
 
 select {
   background-color: rgba(0,0,0,0);
   height: 30px;
-  width:80%;
+  width:130%;
   margin-top: 2%;
   margin-bottom: 4%;
   margin-left: 2%;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
   border-bottom: 1px solid gray;
-  color: white;
+  color: black;
 }
 
 .submit {
   background-color:rgba(0,0,0,0);
-  color: white;
+  color: black;
   border-top: 1px solid gray;
   border-left: 1px solid gray;
   border-right: 1px solid gray;
@@ -120,12 +112,13 @@ select {
 
 textarea {
   background-color:rgba(0,0,0,0);
-  color: white;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
+  color: black;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
   border-bottom: 1px solid gray;
   margin: 1%;
+  margin-top: 3%;
   min-height: 300px; 
   width:100%;
 }
@@ -136,11 +129,16 @@ textarea {
   margin: 2%;
 }
 
-option {
+/*option {
   background-color: grey;
-}
+}*/
 
 #leftcolumn {
   position:sticky;
   top:0;
+}
+
+.halfcolumn {
+  padding-left: 2%;
+  padding-right: 2%;
 }
