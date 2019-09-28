@@ -2,6 +2,10 @@
     font-size: 80px;
 }
 
+.row {
+    width:100%;
+}
+
 .col-3 {
     margin:1%;
 }
@@ -25,5 +29,5 @@ ul {
 
 .subs {
     position: absolute;
-    left:30%;
+    left:25%;
 }
