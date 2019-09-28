@@ -16,13 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from feedbackpage.views import mainPage, addfb
-from submissions.views import page
+from submissions.views import page, categoryfn
 from overview.views import overview
+from gencsv.views import createcsv
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('main/', mainPage),
     path('submit/', addfb),
     path('submissions/', page),
-    path('overview/', overview)
+    path('overview/', overview),
+    path('submitssions/', categoryfn),
+    path('gencsv/', createcsv),
 ]
