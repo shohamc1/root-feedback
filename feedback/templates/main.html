@@ -23,12 +23,16 @@
         <div class="col-md-6 col-sm-12 halfcolumn" #rightcolumn>
             <form action='/submit/' method="POST"> {% csrf_token %}
             <div class="row">    
-            <div class="col">Name: <br>
+            <div class="col-6">Name: <br>
             <input type="text" name="stdname" /><br></div>
-            <div class="col">Student ID: <br>
+            <div class="col-6">Student ID: <br>
             <input type="number" name="stdid" required/><br></div>
             </div>
+            <div class="row">
+            <div class="col-12">
             Email: <br><input type="text" name="stmail" /><br>
+            </div>
+            </div>
             <div class="row">
             <div class="col">Pillar: <br>
             <input type="text" name="pillar" /><br></div>
@@ -44,7 +48,11 @@
                 <br>
                 </div>
             </div>
+            <div class="row">
+            <div class="col-12">
             Feedback: <br><textarea name="message" required/></textarea><br>
+            </div>
+            </div>
             <center><input class="submit" type="submit" value="Submit"></center>
             </form>
         </div>
