@@ -2,6 +2,7 @@
 <head>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="{% static 'css/feedbackpage/style.css' %}">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -15,11 +16,11 @@
     <div class="jumbotron">
     <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6 col-sm-12 sticky-top" #leftcolumn>
-            <h1>Dialogue with <br>Senior Management 2019<br>Feedback Form</h1><hr>
+        <div class="col-md-6 col-sm-12 sticky-top halfcolumn" #leftcolumn>
+            <h1>Dialogue with <br>Senior Management 2019<br>Feedback</h1><hr>
             <p> Your feedback is greatly appreciated and will be collated by ROOT Student Relations for DSM 2019.<br></p>
         </div>
-        <div class="col-md-6 col-sm-12" #rightcolumn>
+        <div class="col-md-6 col-sm-12 halfcolumn" #rightcolumn>
             <form action='/submit/' method="POST"> {% csrf_token %}
             <div class="row">    
             <div class="col">Name: <br>

@@ -1,0 +1,59 @@
+body {
+    font-family: Open Sans;
+    font-size: 16px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color:black;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+h1 {
+    font-size:72px;
+    font-weight:bold;
+}
+
+.row {
+    width:100%;
+    background-color: rgba(0,0,0,0);
+}
+
+.pad {
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-top: 2%;
+}
+
+.rightalign {
+    text-align: right;
+}
+
+.peace {font-size: 30px;}
+.btn {text-align:center;width:60%;font-size: 48px;}
+
+.jumbotron {
+    width: 100%;
+}
+
+.PFNo {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card {
+    margin:1.5%;
+    float:none;
+}
+
+.cardcol {
+    width:100%;
+    align-items:center;
+}
+
+.cardrow {
+    margin:1.5%;
+}
