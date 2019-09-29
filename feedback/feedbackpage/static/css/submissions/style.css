@@ -1,3 +1,22 @@
+body {
+    font-family: Open Sans;
+    font-size: 16px;
+    /* letter-spacing: 2px; */
+    /* word-spacing: 2px; */
+    color:black;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+h1 {
+    font-size:72px;
+    font-weight:bold;
+}
+
+
 .subs_title {
     font-size: 80px;
 }

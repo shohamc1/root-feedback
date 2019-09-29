@@ -22,6 +22,18 @@ h1 {
     letter-spacing: 2px;
 }
 
+.btn-red-outline {
+  background-color: #fff;
+  color: #aa1e30;
+  border: 1.5px solid #aa1e30;
+}
+
+.btn-red-outline:hover {
+  background-color: #aa1e3060;
+  color: #fff;
+  border: 1.5px solid #aa1e3060;
+}
+
 .nav-link {
   letter-spacing: 1px !important;
 }
@@ -45,12 +57,14 @@ h1 {
 
 .jumbotron {
     width: 100%;
+    background-color: #f7e9d5;
 }
 
 .PFNo {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
+    color: #aa1e30;
 }
 
 @media (min-width: 34em) {
@@ -149,7 +163,8 @@ h1 {
   right:-6px;
   /* background:rgba(233,33,99,1); */
   border-radius:50%;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.2);
+  /* box-shadow:0 0 0 3px rgba(233,33,99,0.2); */
+  box-shadow:0 0 0 3px #aa1e3080
 }
 .timeline ul li:nth-child(even):before
 {
@@ -161,7 +176,8 @@ h1 {
   left:-4px;
   /* background:rgba(233,33,99,1); */
   border-radius:50%;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.2);
+  /* box-shadow:0 0 0 3px rgba(233,33,99,0.2); */
+  box-shadow:0 0 0 3px #aa1e3080
 }
 .timeline ul li h3{
   padding:0;
@@ -189,7 +205,8 @@ h1 {
   /* color:#fff; */
   color: #000;
   border-radius:18px;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.3);
+  /* box-shadow:0 0 0 3px rgba(233,33,99,0.3); */
+  box-shadow:0 0 0 3px #aa1e30
 }
 .timeline ul li:nth-child(even) .time
 {
@@ -202,7 +219,8 @@ h1 {
   /* color:#fff; */
   color: #000;
   border-radius:18px;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.3);
+  /* box-shadow:0 0 0 3px rgba(233,33,99,0.3); */
+  box-shadow:0 0 0 3px #aa1e30
 }
 @media(max-width:1000px)
 {
