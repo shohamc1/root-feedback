@@ -13,14 +13,14 @@
 </head>
 <body>
   <!-- NAV -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <a class="navbar-brand pr-4" href="#">
-          ROOT Logo
+          <img src="{% static 'images/root_logo.png' %}" alt="" width="70">
         </a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
@@ -65,14 +65,14 @@
             <h5 class="text-right">Got any concerns?<br/>Let us know.</h5>
           </div>
           <div class="">
-            <a type="button" class="btn btn-dark py-3 px-4 text-uppercase" href="/main" role="button">Submit</a>
+            <a type="button" class="btn btn-red py-3 px-4 text-uppercase" href="/main" role="button">Submit</a>
           </div>
         </div>
       </div>
       <div class="col-12 col-lg-6 py-3">
         <div class="d-flex justify-content-start">
           <div class="">
-            <a type="button" class="btn btn-dark py-3 px-4 text-uppercase" href="/submissions" role="button">Explore</a>
+            <a type="button" class="btn btn-red py-3 px-4 text-uppercase" href="/submissions" role="button">Explore</a>
           </div>
           <div class="pl-5">
             <h5 class="text-left">Check out some of<br/>the submitted feedback.</h5>
@@ -181,8 +181,8 @@
   </section>
   <section id="history" class="py-5">
     <div class="row">
-      <div class="col-4"><center><img src="{% static 'images/guywithmail.png' %}" alt="" style="width:70%;"></center></div>
-      <div class="col-8">
+      <div class="col-12 col-md-4"><center><img src="{% static 'images/history.png' %}" alt="" style="width:70%;"></center></div>
+      <div class="col-12 col-md-8">
         <h3 class="pb-4 text-uppercase"><strong>History of DSM</strong></h3>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p><br><br>
       </div>
