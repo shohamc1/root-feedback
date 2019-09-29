@@ -12,74 +12,257 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div class="container-fluid">
-  <div class="row">
-  <div class="col-md-6 col-sm-12 pad"><H1>Dialogue <br>with Senior Management</H1></div>
-  <div class="col-md-6 col-sm-12 rightalign"><br><br>
-    <div class="row">
-      <div class="col-4 pad"><strong>VENUE</strong><br>Lecture Theatre 3</div>
-      <div class="col-8 pad"><strong>DATE/TIME</strong><br>26 October 2019, 13 00-15 00</div>
-    </div><br><br>
-    <div class="row pad">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand pr-4" href="#">
+          ROOT Logo
+        </a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link px-4" href="/overview">Overview <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4" href="/main">Send Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4" href="/submissions">Submissions</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.root.sutd.edu.sg">Back to ROOT Website</a>
+            </li>
+          </ul>
+        </form>
+      </div>
     </div>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-4 rightalign peace"><br>Speak now or<br>hold your peace.</div>
-    <div class="col-4"><br><br><center><a href="#link" class="btn btn-light" role="button">ACTION</a></center></div>
-    <div class="col-4"><img src="{% static 'images/guywithmail.png' %}" alt="" style="width:70%;"></div>
-  </div><br>
+  </nav>
+
+  <!-- CONTENTS -->
+  <div class="container">
+    <div class="row py-5">
+    <div class="col-lg-6 col-12"><H1 class="text-left">Dialogue<br>with Senior Management</H1></div>
+    <div class="col-lg-6 col-12 text-right d-flex flex-column justify-content-end">
+      <div class="row py-3">
+        <div class="col-6"><strong>VENUE</strong><br>Lecture Theatre 3</div>
+        <div class="col-6"><strong>DATE/TIME</strong><br>26 October 2019, 13 00-15 00</div>
+      </div>
+      <div class="row px-3">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+      </div>
+    </div>
+    </div>
+    <div class="row py-5">
+      <div class="col-12 col-lg-6 py-3">
+        <div class="d-flex justify-content-end">
+          <div class="pr-5">
+            <h5 class="text-right">Got any concerns?<br/>Let us know.</h5>
+          </div>
+          <div class="">
+            <a type="button" class="btn btn-dark py-3 px-4 text-uppercase" href="/main" role="button">Submit</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 py-3">
+        <div class="d-flex justify-content-start">
+          <div class="">
+            <a type="button" class="btn btn-dark py-3 px-4 text-uppercase" href="/submissions" role="button">Explore</a>
+          </div>
+          <div class="pl-5">
+            <h5 class="text-left">Check out some of<br/>the submitted feedback.</h5>
+          </div>
+        </div>
+      </div>
+        <!-- <div class="col-3"><a href="#link" class="btn btn-light" role="button">ACTION</a></div> -->
+      <!-- <div class="col-3"><img src="{% static 'images/guywithmail.png' %}" alt="" style="width:70%;"></div> -->
+      <!-- <div class="col-3"><center><a href="#link" class="btn btn-light" role="button">ACTION</a></center></div>
+      <div class="col-3 rightalign peace">Check out<br>submitted feedback</div> -->
+    </div>
   </div>
   <div class="jumbotron">
-    <h3 class="pad"><strong>PROGRAM FLOW</strong></h3>
-    <div class="row"><br>
-      <div class="col-3">
-        <div class="row">
-          <div class="col-4 PFNo">01</div>
-          <div class="col-8">INTRODUCTION<br>5 mins</div>
+    <div class="container">
+      <h3 class="pb-4 text-uppercase"><strong>Program Flow</strong></h3>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 py-3">
+          <div class="row align-items-center">
+            <div class="col-4 PFNo">01</div>
+            <div class="col-8">INTRODUCTION<br>5 mins</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 py-3">
+          <div class="row align-items-center">
+            <div class="col-4 PFNo">02</div>
+            <div class="col-8">SHARING BY MANAGEMENT<br>20 mins</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 py-3">
+          <div class="row align-items-center">
+            <div class="col-4 PFNo">03</div>
+            <div class="col-8">STRUCTURED Q&A<br>1 hour 35 mins</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 py-3">
+          <div class="row align-items-center">
+            <div class="col-4 PFNo">04</div>
+            <div class="col-8">NETWORKING SESSION<br>Post Event</div>
+          </div>
         </div>
       </div>
-      <div class="col-3">
-        <div class="row">
-          <div class="col-4 PFNo">02</div>
-          <div class="col-8">SHARING BY MANAGEMENT<br>20 mins</div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="row">
-          <div class="col-4 PFNo">03</div>
-          <div class="col-8">STRUCTURED Q&A<br>1 hour 35 mins</div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="row">
-          <div class="col-4 PFNo">04</div>
-          <div class="col-8">NETWORKING SESSION<br>Post Event</div>
-        </div>
-      </div>
-  </div>
     </div>
+  </div>
+  <div class="container">
+    <section id="timeline" class="py-5">
+      <h3 class="text-uppercase text-center"><strong>Timeline</strong></h3>
+      <div class="timeline">
+        <ul>
+          <li>
+            <div class="content">
+              <h4><strong>Pre-Grass Survey</strong></h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="time">
+              <h4 class="text-uppercase"><strong>Week 3</strong></h4>
+            </div>
+          </li>
+          <li>
+            <div class="content">
+              <h4><strong>Grass Session</strong></h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="time">
+              <h4 class="text-uppercase"><strong>Week 3</strong></h4>
+            </div>
+          </li>
+          <li>
+            <div class="content">
+              <h4><strong>Post-Grass Survey</strong></h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="time">
+              <h4 class="text-uppercase"><strong>Week 3</strong></h4>
+            </div>
+          </li>
+          <li>
+            <div class="content">
+              <h4><strong>DSM Day</strong></h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="time">
+              <h4 class="text-uppercase"><strong>11 October</strong></h4>
+            </div>
+          </li>
+          <div style="clear:both;"></div>
+        </ul>
+      </div> 
+    </section>  
+  <section id="smm-profile" class="py-5">
+    <div class="row">
+      <div class="col-12 col-lg-6"></div>
+      <div class="col-12 col-lg-6">
+        <h3 class="pb-4 text-uppercase text-right"><strong>Senior Management Profile</strong></h3>
+        <p class="text-right">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+      </div>          
+    </div> 
+    <div class="row justify-content-center align-items-center py-5">
+      <div class="col-5">
+        <h3>We're working on it.</h3>
+        <h4>Check out this space soon.</h4>
+      </div>
+      <div class="col-7">
+        <img src="{% static 'images/in_progress.png' %}" width="100%" class="img-responsive">
+      </div>
+    </div>
+  </section>
+  <section id="history" class="py-5">
     <div class="row">
       <div class="col-4"><center><img src="{% static 'images/guywithmail.png' %}" alt="" style="width:70%;"></center></div>
       <div class="col-8">
-        <h2>HISTORY OF DSM</h2><br>
+        <h3 class="pb-4 text-uppercase"><strong>History of DSM</strong></h3>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p><br><br>
       </div>
     </div>
-    <div class="row">
-      <div class="col-7"></div>
-      <div class="col-5" style="text-align: right">
-      <h2 style="text-align: inherit;">SENIOR MANAGEMENT PROFILE</h2>
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+  </section>
+  <section id="faq" class="py-5">
+    <h3 class="pb-4 text-uppercase text-left"><strong>Frequently Asked Questions</strong></h3>
+    <p class="text-left w-75">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+    <div class="card-columns pt-5">
+      <div class="card">
+        <div class="card-body p-3">
+          <div class="card-title">Title</div>
+          <div class="card-text">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos</p>
+          </div>
+        </div>
+        <div class="card-footer text-white bg-dark">
+          <small class="text-muted">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </div>
       </div>
-      <div style="text-align:center;width:100%;">
-          <img src="{% static 'images/guywithmail.png' %}" style="width:90%;">
+      
+      <div class="card">
+        <div class="card-body p-3">
+          <div class="card-title">Title</div>
+          <div class="card-text">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem</p>
+          </div>
+        </div>
+        <div class="card-footer text-white bg-dark">
+          <small class="text-muted">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </div>
       </div>
-    <div class="row">
-      <center><h2>FREQUENTLY ASKED QUESTIONS</h1><br><br>
-      <p style="width:50%">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p></center>
+      
+      <div class="card">
+        <div class="card-body p-3">
+          <div class="card-title">Title</div>
+          <div class="card-text">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos</p>
+          </div>
+        </div>
+        <div class="card-footer text-white bg-dark">
+          <small class="text-muted">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </div>
+      </div>   
+      
+      <div class="card">
+        <div class="card-body p-3">
+          <div class="card-title">Title</div>
+          <div class="card-text">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem</p>
+          </div>
+        </div>
+        <div class="card-footer text-white bg-dark">
+          <small class="text-muted">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-body p-3">
+          <div class="card-title">Title</div>
+          <div class="card-text">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem</p>
+          </div>
+        </div>
+        <div class="card-footer text-white bg-dark">
+          <small class="text-muted">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </div>
+      </div>
     </div>
+  <!-- </section>
     <div class="row cardrow">
     <div class="col-4 cardcol">
     <div class="card">
@@ -117,5 +300,9 @@
         </div>
     </div>
     </div>
-    </div>
+    </div> -->
+
+
+
+  </div>
 </body>

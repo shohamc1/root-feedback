@@ -2,28 +2,21 @@
     font-size: 80px;
 }
 
-.row {
-    width:100%;
-}
-
-.col-3 {
-    margin:1%;
-}
-
 .btn-light {
-    width:80%;
+    width:90%;
     height:50px;
+}
+.select {
+    width:90%;
+    height:auto;
+}
+
+option {
+    width:auto;
+    height:auto;
 }
 
 .filter {
-    margin-top:0%;
-    padding-top:3%;
-    padding-bottom:3%;
-    border-right: 1px solid black;
-    position: fixed;
-}
-
-.subs {
-    position: absolute;
-    left:25%;
+    position:sticky;
+    top:0;
 }

@@ -17,32 +17,78 @@
     </style>
 </head>
 <body>
-    <div class="row">
-        <div class="col-4"> &nbsp; </div>
-        <div class="col-4">
-        <h1 class="subs_title">Feedbacks</h1>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
-        </div>
-        <div class="col-4"> &nbsp; </div>
-    </div><br><br>
-    <div class="row">
-    <div class="col-3 filter">
-    <h4>FILTER</h4>
-    <form action='/submitssions/' method="POST"> {% csrf_token %}
-        <select name="cat">
-        <option value="academics">Academics</option>
-        <option value="facilities">Campus Facilities</option>
-        <option value="canteen/food">Canteen and Food Options</option>
-        <option value="communications">Feedback and Communications Matters</option>
-        <option value="5throw">5th Row related matters</option>
-        <option value="others">Others</option>
-        <option value="ABC">All</option>
-        </select>
-        <br><br>
-        <input class="btn btn-light" type="submit" Value="Activate Filter"></button> 
-    </form>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand pr-4" href="#">
+          ROOT Logo
+      </a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+          <a class="nav-link px-4" href="/overview">Overview</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link px-4" href="/main">Send Feedback</a>
+          </li>
+          <li class="nav-item active">
+          <a class="nav-link px-4" href="/submissions">Submissions <span class="sr-only">(current)</span></a>
+          </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+              <a class="nav-link" href="https://www.root.sutd.edu.sg">Back to ROOT Website</a>
+          </li>
+          </ul>
+      </form>
+      </div>
     </div>
-    <div class="col-8 subs">
+  </nav>
+
+
+    <div class="container">
+    <div class="row py-3">
+            <div class="col-lg-4 col-sm-12 pr-0 pb-4 pt-4 filter">
+                    <h4>FILTER</h4>
+                    <form action='/submitssions/' method="POST"> {% csrf_token %}
+                        <div class="form-group">
+                        <select name="cat" class="form-control select">
+                        <option value="academics">Academics</option>
+                        <option value="facilities">Campus Facilities</option>
+                        <option value="canteen/food">Canteen and Food Options</option>
+                        <option value="communications">Feedback and Communications Matters</option>
+                        <option value="5throw">5th Row related matters</option>
+                        <option value="others">Others</option>
+                        <option value="ABC">All</option>
+                        </select>
+                        </div>
+                        <input class="btn btn-light" type="submit" Value="Activate Filter"></button> 
+                    </form>
+                    <!--<div class="dropdown">
+                            <form action='/submitssions/' method="POST"> {% csrf_token %}
+                            <button name="cat"  class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Filter
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a value="academics">Academics</a></li>
+                              <li><a value="facilities">Campus Facilities</a></li>
+                              <li><a value="canteen/food">Canteen and Food Options</a></li>
+                              <li><a value="communications">Feedback and Communications Matters</a></li>
+                              <li><a value="5throw">5th Row Related Matters</a></li>
+                              <li><a value="others">Others</a></li>
+                              <li><a value="ABC">ALL</a></li>
+                            </ul>
+                          </div>
+                        </form>-->
+                          
+                    </div>
+        <div class="col-lg-8 col-sm-12 pl-4">
+        <h1 class="subs_title">Feedback</h1>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
     <!--<h1>HERES THE SUBMISSIONS</h1>-->
     <ul>
         {% for sub in allitems %}
@@ -51,6 +97,7 @@
             {% endif %}
         {% endfor %}
     </ul>
+    </div>
     </div>
     </div>
 </body>
