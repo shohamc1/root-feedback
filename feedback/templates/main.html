@@ -12,32 +12,66 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+    
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand pr-4" href="https://www.root.sutd.edu.sg">
+        <img src="{% static 'images/root_logo_white.png' %}" alt="" width="70">
+    </a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+          <a class="nav-link px-4" href="/overview">Overview</a>
+          </li>
+          <li class="nav-item active">
+          <a class="nav-link px-4" href="/main">Send Feedback <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link px-4" href="/submissions">Submissions</a>
+          </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+              <a class="nav-link" href="https://www.root.sutd.edu.sg">Back to ROOT Website</a>
+          </li>
+          </ul>
+      </form>
+      </div>
+    </div>
+  </nav>
+
     <!-- <img src="{% static 'images/cloud.png' %}"> -->
-    <div class="jumbotron">
-    <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6 col-sm-12 sticky-top halfcolumn" #leftcolumn>
-            <h1>Dialogue with <br>Senior Management 2019<br>Feedback</h1><hr>
-            <p> Your feedback is greatly appreciated and will be collated by ROOT Student Relations for DSM 2019.<br></p>
+    <div class="container">
+    <div class="row py-5">
+        <div class="col-lg-6 col-sm-12 sticky-top halfcolumn" #leftcolumn>
+            <h1>Dialogue with <br>Senior Management 2019 Feedback</h1>
+            <p class="py-4"> Your feedback is greatly appreciated and will be collated by ROOT Student Relations for DSM 2019.<br></p>
         </div>
-        <div class="col-md-6 col-sm-12 halfcolumn" #rightcolumn>
+        <div class="col-lg-6 col-sm-12 halfcolumn" #rightcolumn>
             <form action='/submit/' method="POST"> {% csrf_token %}
+            <div class="form-group">
             <div class="row">    
-            <div class="col-6">Name: <br>
-            <input type="text" name="stdname" /><br></div>
-            <div class="col-6">Student ID: <br>
-            <input type="number" name="stdid" required/><br></div>
+            <div class="col-lg-6 col-sm-12">NAME <br>
+            <input type="text" class="form-control" name="stdname" /><br></div>
+            <div class="col-lg-6 col-sm-12">STUDENT ID <br>
+            <input type="number" class="form-control ml-0" name="stdid" required/><br></div>
             </div>
             <div class="row">
             <div class="col-12">
-            Email: <br><input type="text" name="stmail" /><br>
+            EMAIL <br><input type="text" class="form-control mt-2" name="stmail" /><br>
             </div>
             </div>
             <div class="row">
-            <div class="col">Pillar: <br>
-            <input type="text" name="pillar" /><br></div>
-            <div class="col">Category: <br>
-                <select name="category">
+            <div class="col-lg-6 col-sm-12">PILLAR <br>
+            <input type="text" class="form-control" name="pillar" required/><br></div>
+            <div class="col-lg-6 col-sm-12">CATEGORY <br>
+                <select name="category" class="form-control ml-0">
                 <option value="academics">Academics</option>
                 <option value="facilities">Campus Facilities</option>
                 <option value="canteen/food">Canteen and Food Options</option>
@@ -50,13 +84,13 @@
             </div>
             <div class="row">
             <div class="col-12">
-            Feedback: <br><textarea name="message" required/></textarea><br>
+            FEEDBACK <textarea class="form-control mt-2" name="message" required/></textarea><br>
             </div>
             </div>
-            <center><input class="submit" type="submit" value="Submit"></center>
+            <input class="btn btn-light submit float-right text-uppercase py-3 px-5" type="submit" value="Submit">
+            </div>
             </form>
         </div>
     </div>
-    </div><br>
     </div>
 </body>
